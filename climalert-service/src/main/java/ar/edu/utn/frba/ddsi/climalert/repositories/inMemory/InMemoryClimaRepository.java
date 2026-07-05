@@ -2,10 +2,12 @@ package ar.edu.utn.frba.ddsi.climalert.repositories.inMemory;
 
 import ar.edu.utn.frba.ddsi.climalert.models.entities.Clima;
 import ar.edu.utn.frba.ddsi.climalert.repositories.ClimaRepository;
+import org.springframework.stereotype.Repository;
+
 import java.util.ArrayList;
 import java.util.List;
 
-
+@Repository
 public class InMemoryClimaRepository implements ClimaRepository {
 
     private final List<Clima> historial = new ArrayList<>();
