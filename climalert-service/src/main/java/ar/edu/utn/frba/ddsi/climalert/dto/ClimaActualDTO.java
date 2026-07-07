@@ -1,15 +1,15 @@
 package ar.edu.utn.frba.ddsi.climalert.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
+import lombok.Data;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class ClimaActualDTO {
     @JsonProperty("last_updated")
-    private String lastUpdated;
+    private String ultimaActualizacion;
     @JsonProperty("temp_c")
-    private Double tempC;
-    private Integer humidity;
-    private CondicionDTO condition;
+    private Double temperatura;
+    @JsonProperty("humidity")
+    private Integer humedad;
+    @JsonProperty("condition")
+    private CondicionDTO condicion;
 }
