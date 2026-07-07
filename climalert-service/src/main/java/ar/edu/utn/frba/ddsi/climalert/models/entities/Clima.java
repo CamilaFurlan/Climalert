@@ -17,4 +17,8 @@ public class Clima {
     private String fechaActualizacion;
     private LocalDateTime fechaConsulta;
 
+    public boolean hayAlerta() {
+        return temperatura > 35 && humedad > 60;
+    }
+
 }
